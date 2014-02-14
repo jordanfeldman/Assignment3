@@ -19,6 +19,11 @@
 - (void)viewDidLoad
 {
     _allSelected = NO;
+    _fillCart.enabled = NO;
+    
+    /*UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Hello there!" message: @"Are you the Mr.Bond?" delegate: nil cancelButtonTitle:@"No" otherButtonTitles:@"Yes",nil];
+    [alert show];
+    [alert resignFirstResponder];*/
     
     self.title = @"Banana Bar";
     [self loadCart];
@@ -146,9 +151,7 @@
     detailedView.url = currentFruit.url;
 
     [self.navigationController pushViewController:detailedView animated:YES];
-    
-    //Add UIAlertView
-   // UIAlertView *aler = [[UIAlertView alloc] initWithTitle:@"Bagging" message:@"Paper or Plastic?"]
+
 }
 
 -(void) alertView:(UIAlertView *)alertView
