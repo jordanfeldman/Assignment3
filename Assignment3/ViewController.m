@@ -72,7 +72,7 @@
 //Should remove all of the fruit in the cart.
 -(IBAction)removeAllFruitInCart:(id)sender
 {
-    _allSelected = !_allSelected;
+    _allSelected = NO;
     _emptyCart.enabled = NO;
     _fillCart.enabled = YES;
     _selectAll.enabled = NO;
